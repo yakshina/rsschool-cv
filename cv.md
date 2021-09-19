@@ -40,11 +40,11 @@ var titleElem = menuElem.querySelector('.photo');
 
 ### Educational projects
 
-- Project name: _Positioning and data analysis system at B2B exhibitions._;
+- Project name: _Positioning and data analysis system at B2B exhibitions_;
 
   - Company: _"Megafon", GSOM SPBU, laboratory "5G DREAM LAB" | November 2020 - March 2021_;
 
-  - Roles: _Front-end developer/ UI / UX design._.
+  - Roles: _Front-end developer/ UI / UX design_.
 
 - Project name: _Accounting system for resource planning and time attendance_;
 
