@@ -24,13 +24,18 @@ header {
 }
 
 .photo {
+  height: 100%;
+}
+
+.photo__img {
   width: 145px;
   height: 145px;
   position: absolute;
-  left: 10%;
+  left: 8%;
   top: 5%;
   border-radius: 50%;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 main {
   padding: 5% 10%;
@@ -54,6 +59,11 @@ figure {
   display: inline;
   margin: 1%;
 }
+
 img {
   width: 2em;
+}
+.photo__img .photo {
+  height: 100%;
+  width: auto;
 }
