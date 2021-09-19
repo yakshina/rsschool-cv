@@ -9,7 +9,7 @@
 
 ## Objective
 
-My goal is to become a front-end developer. The priority is the mathematical direction associated with the current training profile. I would like to transfer my theoretical knowledge of applied mathematics and computer science to practice. All this in order to get a promising position in a reputable organization, in order to expand your knowledge, knowledge and skills.
+MI am actively developing in the field of front-end development. Priority is the mathematical direction associated with the current profile of training. In the future, I want to transfer theoretical knowledge of applied cybernetics to practice in order to get a promising position in a reputable organization, as well as expand my knowledge and skills.
 
 ## Technical skill set
 
@@ -23,7 +23,6 @@ My goal is to become a front-end developer. The priority is the mathematical dir
 - Adobe illustrator;
 - Adobe Photoshop;
 - eduScrum/Scrum;
-- Agile;
 - IntelliJ IDEA;
 - Visual Studio Code.
 
@@ -41,17 +40,17 @@ var titleElem = menuElem.querySelector('.photo');
 
 ### Educational projects
 
-- Project name: _Positioning system_;
+- Project name: _Positioning and data analysis system at B2B exhibitions._;
 
-  - Company: _Megafon_;
+  - Company: _"Megafon", GSOM SPBU, laboratory "5G DREAM LAB" | November 2020 - March 2021_;
 
-  - Roles: _Front-end developer/UI&UX_.
+  - Roles: _Front-end developer/ UI / UX design._.
 
-- Project name: _Business analytics_;
+- Project name: _Accounting system for resource planning and time attendance_;
 
-  - Company: _TaskData_;
+  - Company: _"TaskData", St. Petersburg State University | October 2019 - February 2020_;
 
-  - Roles: _Developer_.
+  - Roles: _Business intelligence_.
 
 ## Education, Training, and Language
 
