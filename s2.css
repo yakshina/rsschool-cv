@@ -2,12 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 1em;
 }
 html {
   max-width: 1200px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 .header {
@@ -351,33 +349,4 @@ h3 {
   .hiader__nav__two a:focus:after {
     width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
   }
-}
-
-@media screen and (max-width: 730px) {
-  .header__h {
-    font-size: 4.5vw;
-  }
-  .header__p {
-    font-size: 3vw;
-  }
-  font-size: 3vw;
-  h2 {
-    font-size: 2.5vw;
-    line-height: 0px;
-  }
-  h3 {
-    font-size: 2vw;
-  }
-  .header__wrapper_h {
-    letter-spacing: 0.6vw;
-  }
-  .footer__nav {
-    grid-template-columns: repeat(1, minmax(100px, auto));
-  }
-  .mail {
-    font-size: 0.7em;
-  }
-}
-
-@media screen and (max-width: 490px) {
 }
