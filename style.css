@@ -200,6 +200,7 @@ h2 {
 .video iframe {
   width: auto;
   margin-bottom: 20px;
+  border: none;
 }
 
 .video h2 {
