@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+html {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 300px minmax(100px, auto);
+  grid-template-rows: 110px;
+
+  grid-column-gap: 5%;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.header__wrapper_h {
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.header span {
+  border-bottom: 5px solid black;
+  width: 100px;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.header__h {
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 60px;
+  display: table-caption;
+  margin-bottom: 10px;
+}
+
+.header__p {
+  margin-top: 0;
+  letter-spacing: 8px;
+}
+
+.header__photo {
+  align-self: start;
+  justify-self: center;
+  height: 370px;
+  width: 300px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: #161a27;
+}
+
+.header__img {
+  align-self: start;
+  justify-self: center;
+  height: auto;
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.main__aside a {
+  color: #00a650;
+}
+.hiader__nav a:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background-color: #00a650; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.hiader__nav a:hover:after,
+.hiader__nav a:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.header__wrapper_nav {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 20px;
+  justify-self: end;
+}
+
+.main__wrapper {
+  display: grid;
+  grid-template-columns: 300px minmax(100px, auto);
+  grid-template-rows: auto 0;
+  grid-column-gap: 5%;
+  line-height: 2;
+}
+
+.main__aside,
+.language {
+  background-color: #161a27;
+  color: #fff;
+  min-height: 100px;
+  align-self: start;
+  justify-self: center;
+  width: 300px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+li::before {
+  color: #00a650;
+  content: "•";
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 60px;
+  display: table-caption;
+  margin-bottom: 0;
+  margin-top: 40px;
+  letter-spacing: 5px;
+
+  display: inline;
+}
+
+.main__aside a {
+  margin: 0;
+}
+.main__aside h2,
+.language h2 {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.language {
+  position: relative;
+  top: -1670px;
+}
+.aboutme {
+  margin-top: 20px;
+
+  margin-bottom: 15px;
+}
+
+.edu ul,
+.contacts ul {
+  padding: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 300px minmax(100px, auto);
+  background-color: #161a27;
+  border-top-style: solid;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, auto));
+
+  justify-items: center;
+  align-items: center;
+  text-align: start;
+}
+
+.footer img {
+  width: 80px;
+  margin-top: 30px;
+}
+
+.video {
+  display: grid;
+  grid-template-columns: minmax(100px, auto);
+
+  overflow: hidden;
+  margin-left: 40px;
+}
+.video iframe {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.video h2 {
+  margin-top: 0;
+}
+
+.footer__p {
+  text-align: center;
+}
+
+.project__meg img {
+  border-radius: 6%;
+  width: 100%;
+}
+
+h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.project__meg__info {
+  display: grid;
+  grid-template-columns: minmax(10px, 200px) auto;
+  justify-items: start;
+  grid-column-gap: 5%;
+}
+.project__meg__info p {
+  justify-self: start;
+}
+
+.hiader__nav__two {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .hiader__nav {
+    display: none;
+  }
+  .header__menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+  }
+  .active .header__menu__overlay {
+    display: block;
+  }
+  .active .hiader__nav__two {
+    display: flex;
+    flex-flow: column;
+    overflow-y: auto;
+    z-index: 5;
+    padding-top: 80px;
+    left: -100%;
+    background-color: rgba(22, 26, 39, 2);
+    margin-top: -100px;
+    transition: 0.5s;
+  }
+
+  .header__wrapper_nav {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0;
+    justify-self: end;
+    margin-top: 40px;
+  }
+  .hiader__nav__two a {
+    color: #fff;
+    font-size: 32px;
+    padding: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    z-index: 100;
+  }
+  .header__menu_button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .header__menu_button:hover .header__menu_button {
+    filter: brightness(0.7);
+  }
+  .header__menu_button span,
+  .header__menu_button span::before,
+  .header__menu_button span::after {
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #000;
+    border-bottom: none;
+    z-index: 60;
+  }
+  .header__menu_button span::before,
+  .header__menu_button span::after {
+    content: " ";
+    display: block;
+    transition: 0.5s;
+  }
+
+  .header__menu_button span::before {
+    transform: translateY(-12px);
+  }
+  .header__menu_button span::after {
+    transform: translateY(12px);
+  }
+
+  .active span {
+    background-color: transparent;
+  }
+
+  .active span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .active .hiader__nav .header__menu_button:hover:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  .active .hiader__nav__two a:after {
+    display: block;
+    position: absolute;
+    left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0; /*задаём длинну линии до наведения курсора*/
+    height: 3px; /*задаём ширину линии*/
+    background-color: #00a650; /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out; /*задаём время анимации*/
+  }
+
+  .hiader__nav__two a:hover:after,
+  .hiader__nav__two a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  }
+}
